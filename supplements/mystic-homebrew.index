@@ -8,5 +8,6 @@
 	</info>
 	<files>
 		<file name="mystic-background" url="https://raw.githubusercontent.com/TyPilot/elements/master/supplements/mystic-homebrew/background-mystic.xml" />
+        	<file name="source.xml" url="https://raw.githubusercontent.com/TyPilot/elements/master/supplements/mystic-homebrew/source.xml" />
 	</files>
 </index>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/TyPilot/elements/master/supplements/mystic-homebrew/source.xml" />
+		</update>
+	</info>
+	<element name="Mystic" type="Source" source="Internal" id="ID_HOMEBREW_SOURCE_MYSTIC">
+		<description>
+			<h5 style="margin-top:-1em">Mystic (5e Background)</h5>
+		</description>
+		<setters>
+			<set name="abbreviation">DSDQ</set>
+			<set name="url">https://www.dandwiki.com/wiki/Mystic_(5e_Background)</set>
+			<set name="image">https://nancystohlman.com/wp-content/uploads/2014/12/fortune-teller.jpg</set>
+			<set name="official">false</set>
+			<set name="supplement">true</set>
+			<set name="release">20160906</set>
+		</setters>
+	</element>
+</elements>
