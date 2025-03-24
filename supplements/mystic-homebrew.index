@@ -3,11 +3,10 @@
 	<info>
 		<name>Mystic</name>
 		<update version="0.0.1">
-			<file name="mystic-homebrew" url="https://raw.githubusercontent.com/TyPilot/elements/master/supplements/mystic-homebrew.index" />
+			<file name="mystic-homebrew.index" url="https://raw.githubusercontent.com/TyPilot/elements/master/supplements/mystic-homebrew.index" />
 		</update>
 	</info>
 	<files>
-		<file name="mystic-background" url="https://raw.githubusercontent.com/TyPilot/elements/master/supplements/mystic-homebrew/background-mystic.xml" />
-        	<file name="source.xml" url="https://raw.githubusercontent.com/TyPilot/elements/master/supplements/mystic-homebrew/source.xml" />
+		<file name="background-mystic.xml" url="https://raw.githubusercontent.com/TyPilot/elements/master/supplements/mystic-homebrew/background-mystic.xml" />
 	</files>
 </index>
