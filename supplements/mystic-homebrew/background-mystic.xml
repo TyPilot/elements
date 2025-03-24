@@ -30,10 +30,12 @@
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_MYSTIC_TOOLS" />
-			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
-			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
-			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+			<select type="Proficiency" name="Mystic Tools" supports="Tool" />
+			<select type="Language" name="Mystic Languages" number="3">
+				<item id="1">Celestial</item>
+				<item id="2">Abyssal</item>
+				<item id="3">Infernal</item>
+			</select>
 
 			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_MYSTIC_AURA" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
 			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
