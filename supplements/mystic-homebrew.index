@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Mystic</name>
+		<update version="0.0.1">
+			<file name="mystic-homebrew" url="https://raw.githubusercontent.com/TyPilot/elements/master/supplements/mystic-homebrew.index" />
+		</update>
+	</info>
+	<files>
+		<file name="mystic-background" url="https://raw.githubusercontent.com/TyPilot/elements/master/supplements/mystic-homebrew/background-mystic.xml" />
+	</files>
+</index>

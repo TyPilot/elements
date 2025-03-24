@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mystic</name>
+		<description>Mystic Background</description>
+		<author url="https://www.dandwiki.com/wiki/Mystic_(5e_Background)">DND Wiki</author>
+		<update version="0.0.1">
+			<file name="background-mystic.xml" url="https://raw.githubusercontent.com/TyPilot/elements/master/supplements/mystic-homebrew/background-mystic.xml" />
+		</update>
+	</info>
+
+	<element name="Mystic" type="Background" source="Homebrew" id="ID_BACKGROUND_MYSTIC">
+		<description>
+			<p>By magic, psionics, communing with spirits or otherwise, there are special people who have a sixth sense. These people sense things invisible to most others. As a mystic do you see your power as a curse rather than a gift? Are you able to control your power or does it happen randomly? Is it given to you by a greater power or did these powers develop over time?</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Arcana, Perception</li>
+				<li><strong>Tool Proficiencies:</strong> Mystic Tools</li>
+				<li><strong>Languages:</strong> Celestial, Abyssal, Infernal</li>
+				<li><strong>Equipment:</strong> A protective symbol, a costume, a quill, a bottle of ink and 5 sheets of paper, a Mystic Tool, a page with an important person or event described on it and a belt pouch containing 10gp</li>
+			</ul>
+			<div element="ID_BACKGROUND_FEATURE_MYSTIC_AURA" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Mystics are defined by their experiences with the unknown. These characteristics reflect the mental strain, obsession, or enlightenment they’ve gained from their exposure to forces beyond the material realm.</p>
+		</description>
+
+		<setters>
+			<set name="short">Arcana, Perception, Mystic Tools, Celestial, Abyssal, Infernal</set>
+		</setters>
+
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_MYSTIC_TOOLS" />
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
+			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_MYSTIC_AURA" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			
+            <select name="Specialty" type="List" optional="true">
+				<item id="1">Medium</item>
+				<item id="2">Oracle</item>
+				<item id="3">Palm Reader</item>
+				<item id="4">Exorcist</item>
+				<item id="5">Empath</item>
+				<item id="6">Clairvoyant</item>
+				<item id="7">Diviner</item>
+				<item id="8">Astrologist</item>
+                <item id="9">Numerologist</item>
+				<item id="10">Prohpet</item>
+			</select>
+
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">I sometimes see dead people</item>
+				<item id="2">I often have vivid dreams or nightmares</item>
+				<item id="3">I talk soft and mellow</item>
+				<item id="4">I blurt out feelings and cryptic warnings to random people I meet</item>
+				<item id="5">I show strong feelings of empathy</item>
+				<item id="6">I intoxicate myself to allow my powers</item>
+				<item id="7">I read people's psyche and silently judge them</item>
+				<item id="8">I look up at the sky, expecting a sign of portent</item>
+			</select>
+
+			<select name="Ideal" type="List">
+				<item id="1">Prevention I want to prevent the bad things happening to innocent people. (Good)</item>
+				<item id="2">Guidance Fate cannot be prevented, I can only guide people to theirs (Neutral)</item>
+				<item id="3">Manipulation I will use my power to gain control over the ignorant people (Evil)</item>
+				<item id="4">Responsibility It's my responsibility to show people the way to their destiny.(Lawful)</item>
+				<item id="5">Intuition I follow where fate leads me and know no other path.(Chaotic)</item>
+				<item id="6"> 	Refusal I want this burden taken away from me (Any)</item>
+			</select>
+
+			<select name="Bond" type="List">
+				<item id="1">I have a twin with whom I share this power</item>
+				<item id="2">I know secrets that could have devastating consequences if not revealed to the right people</item>
+				<item id="3">I have experienced the presence of a special person I want to meet</item>
+				<item id="4">Since I've heard about The Source of Destiny I want to find it</item>
+				<item id="5">Two forces are telling me to go to a direction opposite of each other</item>
+				<item id="6">I am tasked with the resurrection of a dead entity</item>
+			</select>
+
+			<select name="Flaw" type="List">
+				<item id="1">I have random black-outs.</item>
+				<item id="2">My powers don't happen at will.</item>
+				<item id="3">I tend to avoid people because my powers put stress on me.</item>
+				<item id="4">I get random bouts of paranoia.</item>
+				<item id="5">I have an addiction.</item>
+				<item id="6">I guess peoples feelings, character or birth date and am usually wrong.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Portent" type="Background Feature" source="Homebrew" id="ID_BACKGROUND_FEATURE_MYSTIC_AURA">
+		<supports>Background Feature</supports>
+		<description>
+			<p>With your mystical powers you have witnessed an impactful event. The nature of how you experienced this depends on your specialization. The event might be a person battling against another person, the destruction of an important artifact, a god bringing a plague or perhaps a meteorite crashing onto a city. You can describe this situation in visual/emotional detail but can't name an exact time or place. This information might clash with the current beliefs, norms or values of your setting. Causing conflict or shunned expressions from others when mentioned. Work with your DM about the details and the importance of this event and what impact it might have on the campaign.</p>
+		</description>
+		<sheet alt="Mystic Aura" />
+	</element>
+</elements>
